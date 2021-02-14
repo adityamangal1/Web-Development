@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+
+        body{
+            border: 2px solid black;
+            background-color: cornflowerblue;
+            height: 2600px;
+        }
+        .class{
+            display: inline-block;
+            border: 2px solid black;
+            height: 150px;
+            width: 150px;
+            margin: 4px;
+            padding: 3px;
+        }   
+        #box3{
+            /* position: relative; */
+            /* position: absolute; */
+            /* top: 34px; */
+            /* left: 34px; */
+
+            /* For a fixed psoition */
+            position: fixed;
+            /* right: 10px; */
+
+            /* To fixed at bottom */
+            /* bottom: 2px; */
+            
+            position: sticky;
+            top: 2px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="class" id="box1">1</div>
+    <div class="class" id="box2">2</div>
+    <div class="class" id="box3">Chat with us</div>
+    <div class="class" id="box4">4</div>
+
+    
+</body>
+</html>
