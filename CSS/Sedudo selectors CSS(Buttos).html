@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seudo selectors CSS</title>
+
+    <style>
+      div {
+        border: 3px solid grey;
+        width: 500px;
+        margin: 20px auto;
+      }
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        color: rgb(233, 224, 175);
+        background-color: indianred;
+        border: 3px solid gold;
+      }
+      a:visited {
+        color: khaki;
+      }
+      a:active {
+        color: lawngreen;
+      }
+      button:hover {
+        background-color: rgb(219, 179, 248);
+      }
+      .btn {
+        background-color: hotpink;
+        padding: 4px;
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>Seudo secectors CSS</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+        numquam dolores sit quaerat, modi sapiente ullam delectus, natus facere
+        illum eveniet voluptatem cumque repudiandae distinctio incidunt? Tempore
+        porro quis nihil. Nisi inventore repellendus voluptatum!
+      </p>
+      <a href="https://google.com/" class="btn">Read More</a>
+      <button class="btn">Read more</button>
+    </div>
+  </body>
+</html>
