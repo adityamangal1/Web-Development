@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Before and after pseudo selectors</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        font-family: "Baloo Bhai 2", cursive;
+      }
+      section {
+        display: flex;
+        flex-direction: column;
+        width: 100em;
+        align-items: center;
+        margin: 23px;
+        padding: 18px;
+      }
+      li {
+        list-style: none;
+        padding: 20px;
+      }
+      .navigate {
+        display: flex;
+      }
+      h1 {
+        font-size: 40px;
+      }
+
+      header::before {
+        background: url("https://source.unsplash.com/random") no-repeat center
+          center/cover;
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        z-index: -1;
+        opacity: 0.4;
+      }
+      li:hover {
+        color: hotpink;
+        cursor: pointer;
+      }
+      p {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="navigate">
+          <li>Home</li>
+          <li>About us</li>
+          <li>Conatct us</li>
+          <li>Blogs</li>
+        </ul>
+      </nav>
+      <section>
+        <h1>This is aditya mangal</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae totam
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
+          repellendus laborum cupiditate iusto numquam eaque, est totam labore
+          dignissimos eius doloribus aliquam non cumque dolor ipsam veritatis
+          doloremque nostrum! Consectetur?Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Laboriosam quis dicta exercitationem
+          temporibus quam, consequuntur nobis. Vero sunt pariatur nulla vel, eum
+          tempora, exercitationem iusto aspernatur, numquam eius ipsam Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eveniet
+          quasi deserunt cumque quidem quis dicta harum minus quod, quam, facere
+          ea dignissimos voluptates reprehenderit rerum ipsa sequi! Enim,
+          consequatur?lore
+        </p>
+      </section>
+    </header>
+    <!-- <hr /> -->
+  </body>
+</html>
