@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attributes and nth child</title>
+
+    <style>
+      .container {
+        display: block;
+        width: 200px;
+        margin: 40px auto;
+      }
+      input {
+        display: block;
+        margin: 7px;
+        padding: 5px;
+      }
+      input[type="text"] {
+        color: aqua;
+        border: 3px solid blueviolet;
+      }
+
+      a[target] {
+        color: burlywood;
+        font-size: 30px;
+        text-decoration: none;
+      }
+      a[target]:hover {
+        color: chartreuse;
+        border: 2px solid coral;
+      }
+      li:nth-child(2n + 0) {
+        border: 2px solid springgreen;
+      }
+      input[type="email"] {
+        color: tomato;
+      }
+      li:nth-child(even) {
+        background-color: tomato;
+      }
+      a[target="_self"]:hover {
+        color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="" class="form-action">
+        <h1><a href="http://google.com" target="_blank">Go to google</a></h1>
+        <h1><a href="http://facebook.com" target="_self">Go to facebook</a></h1>
+        <input type="text" name="aditya mangal" placeholder="Enter Your Name" />
+        <input
+          type="email"
+          name="aditya mangal"
+          placeholder="Enter Your email"
+        />
+        <input type="submit" value="submit" />
+      </form>
+      <ul>
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li>
+        <li>Item4</li>
+        <li>Item5</li>
+        <li>Item6</li>
+        <li>Item7s</li>
+      </ul>
+    </div>
+  </body>
+</html>
