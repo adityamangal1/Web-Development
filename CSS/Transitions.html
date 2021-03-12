@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition property</title>
+  </head>
+  <style>
+    .box {
+      display: flex;
+      background-color: tomato;
+      width: 250px;
+      height: 250px;
+      align-items: center;
+      justify-content: center;
+      /* transition-property: background-color; */
+      /* transition-duration: 1s; */
+      /* transition-timing-function: ease-out; */
+      /* transition-delay: 2s; */
+
+      /* Short hand propeerty for transition    */
+      transition: all 2s ease-in 0.2s;   /* Use all for transition of all properties*/
+    }
+    .box:hover {
+      background-color: violet;
+      height: 400px;
+      width: 400px;
+      border-radius: 100px;
+      font-size: 20px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="box">This is the box</div>
+    </div>
+  </body>
+</html>
