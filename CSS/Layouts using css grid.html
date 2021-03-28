@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template areas in grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                "navbar navbar navbar navbar"
+                "section section section aside";
+        }
+
+        .item {
+            border: 3px solid royalblue;
+            background-color: salmon;
+            font-size: 18px;
+            font-family: cursive;
+            /* transition-property: all 3s ease-in-out 2s; */
+            transition-property: all;
+            
+        }
+
+        .item:hover {
+            background-color: rgb(20, 230, 230);
+            /* width: 200px; */
+            /* height: 200px; */
+            border-radius: 21px;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+
+
+        }
+
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #aside {
+            grid-area: aside;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="item">Home about us Contact Us</div>
+        <div id="section" class="item">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem neque
+            sed cupiditate porro numquam amet necessitatibus facilis, reprehenderit
+            sequi inventore eos, ipsum sapiente odio in! Alias consequuntur error
+            omnis explicabo Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Optio reiciendis animi repudiandae itaque tempore accusamus unde ex.
+            Voluptate quidem laudantium id ipsa distinctio. Perspiciatis veritatis
+            maxime quis quae in adipisci. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Corporis deleniti reiciendis alias incidunt
+            repellendus aut eveniet! Deserunt veritatis ipsa sint magnam eveniet
+            obcaecati provident nam quas, odit aliquid in cupiditate. Lorem, ipsum
+            dolor sit amet consectetur adipisicing elit. Earum omnis iste fugiat
+            rerum iusto nisi veniam ad reiciendis? Ducimus exercitationem architecto
+            laudantium recusandae, doloribus ab, illo ipsa dolorum nobis dolore
+            illum odio ipsam rem. Sapiente enim nemo dolore facilis! .lorem
+        </div>
+        <div id="aside" class="item">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias
+            asperiores quibusdam eligendi Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Optio reiciendis animi repudiandae itaque tempore
+            accusamus unde ex. Voluptate quidem laudantium id ipsa distinctio.
+            Perspiciatis veritatis maxime quis quae in adipisci. Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Corporis deleniti reiciendis
+            alias incidunt repellendus aut eveniet! Deserunt veritatis ipsa sint
+            magnam eveniet obcaecati provident nam quas, odit aliquid in cupiditate.
+            .lorem
+        </div>
+        <!-- <div class="item">item-1</div>
+      <div class="item">item-2</div>
+      <div class="item">item-3</div>
+      <div class="item">item-4</div>
+      <div class="item">item-5</div>
+      <div class="item">item-6</div>
+      <div class="item">item-7</div>
+      <div class="item">item-8</div>
+      <div class="item">item-9</div>
+      <div class="item">item-10</div> -->
+    </div>
+</body>
+
+</html>
