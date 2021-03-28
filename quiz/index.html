@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+<style>
+    h1{
+        margin-left: 615px;
+        color: tomato;
+    }
+    .center{
+        display: flex;
+        justify-content: center;
+    }
+    .start_btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+    .start_btn button{
+    font-size: 25px;
+    font-weight: 500;
+    color: #007bff;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+    
+    
+}
+.start_btn button:hover{
+    background-color: aqua;
+}
+
+</style>
+</head>
+<body>
+    <div class="start_btn"><button>Start Quiz</button></div>
+
+    <h1>Welcome to Quiz</h1>
+    <h3 class="center">There are 10 questions and each question have four options.Choose one of them wisely.</h3>
+    <!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script> -->
+    <!-- <div class="elfsight-app-14d1e083-2332-4baf-a517-a018af91bf7e"></div> -->
+    <form name="quiz" class="quiz">
+        <div>
+            <p> 1.In which decade was the American Institute of Electrical Engineers (AIEE) founded?</p>
+            <p><input type="radio" name="question1" id="">A. 1850s</p>
+            <p><input type="radio" name="question1" id="">B. 1880s</p>
+            <p><input type="radio" name="question1" id="">C. 1930s</p>
+            <p><input type="radio" name="question1" id="">D. 1950s</p>
+        </div>
+        <div>
+            <p> 2.What is part of a database that holds only one type of information?</p>
+            <p><input type="radio" name="question2" id="">A. Report</p>
+            <p><input type="radio" name="question2" id="">B. Field</p>
+            <p><input type="radio" name="question2" id="">C. Record</p>
+            <p><input type="radio" name="question2" id="">D. File</p>
+        </div>
+        <div>
+            <p> 3.'OS' computer abbreviation usually means ?</p>
+            <p><input type="radio" name="question3" id="">A. Order of Significance</p>
+            <p><input type="radio" name="question3" id="">B. Open Software</p>
+            <p><input type="radio" name="question3" id="">C. Operating System</p>
+            <p><input type="radio" name="question3" id="">D. Optical Sensor</p>
+        </div>
+        <div>
+            <p> 4.In which decade with the first transatlantic radio broadcast occur?</p>
+            <p><input type="radio" name="question4" id="">A. 1850s</p>
+            <p><input type="radio" name="question4" id="">B. 1860s</p>
+            <p><input type="radio" name="question4" id="">C. 1870s</p>
+            <p><input type="radio" name="question4" id="">D. 1900s</p>
+        </div>
+        <div>
+            <p> 5.'.MOV' extension refers usually to what kind of file?</p>
+            <p><input type="radio" name="question5" id="">A. Image file</p>
+            <p><input type="radio" name="question5" id="">B. Animation/movie file</p>
+            <p><input type="radio" name="question5" id="">C. Audio file</p>
+            <p><input type="radio" name="question5" id="">D. MS Office document</p>
+        </div>
+        <div>
+            <p> 6.In which decade was the SPICE simulator introduced?</p>
+            <p><input type="radio" name="question6" id="">A. 1950s</p>
+            <p><input type="radio" name="question6" id="">B. 1960s</p>
+            <p><input type="radio" name="question6" id="">C. 1970s</p>
+            <p><input type="radio" name="question6" id="">D. 1980s</p>
+        </div>
+        <div>
+            <p> 7.Most modern TV's draw power even if turned off. The circuit the power is used in does what function?</p>
+            <p><input type="radio" name="question7" id="">A. Sound</p>
+            <p><input type="radio" name="question7" id="">B. Remote control</p>
+            <p><input type="radio" name="question7" id="">C. Color balance</p>
+            <p><input type="radio" name="question7" id="">D. High voltage</p>
+        </div>
+        <div>
+            <p>8. Which is a type of Electrically-Erasable Programmable Read-Only Memory?</p>
+            <p><input type="radio" name="question8" id="">A. Flash</p>
+            <p><input type="radio" name="question8" id="">B. Flange</p>
+            <p><input type="radio" name="question8" id="">C. Fury</p>
+            <p><input type="radio" name="question8" id="">D. FRAM</p>
+        </div>
+        <div>
+            <p> 9.The purpose of choke in tube light is ?</p>
+            <p><input type="radio" name="question9" id="">A. To decrease the current</p>
+            <p><input type="radio" name="question9" id="">B. To increase the current</p>
+            <p><input type="radio" name="question9" id="">C. To decrease the voltage momentarily</p>
+            <p><input type="radio" name="question9" id="">D. To increase the voltage momentarily</p>
+        </div>
+        <div>
+            <p> 10.'.MPG' extension refers usually to what kind of file?</p>
+            <p><input type="radio" name="question10" id="">A.WordPerfect Document file</p>
+            <p><input type="radio" name="question10" id="">B. MS Office document</p>
+            <p><input type="radio" name="question10" id="">C. Animation/movie file</p>
+            <p><input type="radio" name="question10" id="">D. Image file</p>
+        </div>
+        <button>Submit</button>
+    </form>
+        <div class="info_box">
+            <div class="info-title"><span>Some Rules of this Quiz</span></div>
+            <div class="info-list">
+                <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+                <div class="info">2. Once you select your answer, it can't be undone.</div>
+                <div class="info">3. You can't select any option once time goes off.</div>
+                <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+                <div class="info">5. You'll get points on the basis of your correct answers.</div>
+            </div>
+            <div class="buttons">
+                <button class="quit">Exit Quiz</button>
+                <button class="restart">Continue</button>
+            </div>
+        </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
