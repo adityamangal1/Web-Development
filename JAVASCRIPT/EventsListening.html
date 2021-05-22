@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js Events listening</title>
+    <style>
+      #btn {
+        padding: 9px;
+        border: 2px solid black;
+        cursor: pointer;
+        background-color: aquamarine;
+        border-radius: 13px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>hi this is aditya</h1>
+      <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolores
+        iure, a quas illo deserunt sequi nobis! Eum laboriosam, itaque placeat
+        animi aliquid tenetur natus repudiandae laborum fugiat architecto
+        maiores impedit? Dolor explicabo quibusdam tempore ipsum molestiae ullam
+        quam! Ipsa natus placeat earum architecto cupiditate asperiores, soluta
+        minus ut odit quam numquam ab optio culpa minima necessitatibus deleniti
+        id quibusdam praesentium maxime nulla voluptatum nostrum voluptatem
+        consectetur? Sapiente ex fuga ullam deleniti ab est blanditiis id quis
+        quod cum iure, praesentium ut corporis laborum ipsa quos exercitationem
+        voluptates culpa accusamus quaerat! Deleniti ratione dolorum beatae
+        officia nihil cum at quod voluptas nam inventore, fugiat modi debitis
+        autem, sequi nisi earum magni! Corrupti at facilis debitis quo molestias
+        totam aut nulla rem voluptate quos odio et iusto nobis temporibus alias
+        magni qui fugiat mollitia eligendi quaerat officia, pariatur eaque.
+        Nostrum totam beatae numquam incidunt autem non cumque perferendis vitae
+        alias sequi temporibus, asperiores in aliquid? Laboriosam debitis ut
+        velit magnam iste illo quaerat dolorem repellat obcaecati consequuntur
+        dolorum eligendi possimus est labore aliquid deleniti libero hic, unde,
+        dolor voluptas placeat eius repellendus. Odit libero voluptate eum
+        tenetur aspernatur officiis voluptatibus, dolorem saepe molestias!
+        Consectetur libero, rem, eaque aliquid illo explicabo delectus amet
+        voluptatum est quo fugiat, eum vitae in cumque quos iste? Eligendi,
+        reprehenderit molestiae pariatur quisquam explicabo earum tempore
+        officiis eum ex aspernatur harum, amet consequuntur illum voluptatum
+        molestias odio minus id porro tempora, laboriosam quas sequi illo
+        assumenda quod? Voluptas, fugiat aspernatur! Quidem quam fugiat, alias
+        repellendus similique consequatur hic molestiae voluptatem suscipit
+        veniam repudiandae quas commodi dolorem quos corporis aspernatur debitis
+        accusantium cupiditate ex mollitia error magnam officia? Fugit
+        consequuntur impedit rem officia nesciunt voluptatum totam reiciendis ea
+        alias natus deleniti dolores quam voluptates illo, sunt molestiae hic
+        quo quidem explicabo velit porro atque minima unde! Deserunt, culpa?
+      </p>
+    </div>
+    <button id="btn" onclick="togglehide()">Show/Hide</button>
+
+    <script>
+
+        let para = document.getElementById("para");
+        para.addEventListener('click',function run(){
+          para.style.color = 'red';
+
+        });
+
+      function togglehide() {
+        let btn = document.getElementById("btn");
+        if (para.style.display != "none") {
+          para.style.display = "None";
+        } 
+        else {
+          para.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
