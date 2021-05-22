@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SET TIMEOUT</title>
+</head>
+
+<body>
+    <!-- <div>There are set timeouts in js</div> -->
+    <h1> Time now is <span id="time"></span></h1>
+
+    <script>
+        function greet(name){
+            console.log("Good morning" + ' '+ name);
+        }
+
+        // greet(2);
+        // setTimeout(greet, 2000,"aditya");
+        // clearTimeout(call);
+
+        // clear timeout as same as in case of set interval
+        // setInterval(greet, 900,"aditya");
+
+        function DisplayTime(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+
+        // DisplayTime();
+        setInterval(DisplayTime,1000)
+
+
+    </script>
+</body>
+
+</html>
