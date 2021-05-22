@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SET TIMEOUT</title>
+    <style>
+        .container {
+            text-align: center;
+            background-color: aqua;
+            margin: 23px;
+            padding: 41px 32px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .container:hover{
+            color: rgb(92, 49, 92);
+            transition: ease-in 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div>There are set timeouts in js</div> -->
+    <div class="container">
+
+        Time now is <span sd id="time"></span>
+    </div>
+
+    <script>
+        function DisplayTime() {
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+
+        setInterval(DisplayTime, 1000)
+        let dt = new Date();
+        console.log(dt);
+
+        // let dt2 = new Date("2022-4-16");
+        // console.log(dt2);
+
+        let dt2 = dt.getFullYear();
+        console.log("The year on that date is ", dt2);
+
+        let dt3 = dt.getMonth();
+        console.log("The month on that date is ", dt3);
+
+        // We can set manually the date ,month or year bt SetDate, Setyear function
+
+
+    </script>
+</body>
+
+</html>
